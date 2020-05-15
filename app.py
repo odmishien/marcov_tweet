@@ -1,7 +1,7 @@
 import markovify
 import MeCab
 
-m = MeCab.Tagger('-Owakati')
+m = MeCab.Tagger('-Owakati -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd')
 parsed_text = ""
 
 for line in open('tweets.txt', 'r'):
